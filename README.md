@@ -1,0 +1,1 @@
+# To start simply type: "node assignment_001.js" in your terminal
