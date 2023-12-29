@@ -12,10 +12,10 @@ const b_height = 51;
 
 // Reusable function
 /**
- * @param {number} a4_width 
- * @param {number} a4_height 
- * @param {number} p_width 
- * @param {number} p_height 
+ * @param {Number} a4_width 
+ * @param {Number} a4_height 
+ * @param {Number} p_width 
+ * @param {Number} p_height 
  */
 function maxNoOutput(a4_width, a4_height, p_width, p_height) {
     // Calculate the number of post-it notes
@@ -31,14 +31,14 @@ function maxNoOutput(a4_width, a4_height, p_width, p_height) {
 }
 
 /**
- * @param {number} a4_width 
- * @param {number} a4_height 
- * @param {number} a_width 
- * @param {number} a_height 
- * @param {number} b_width 
- * @param {number} b_height 
- * @param {number} total_type_a 
- * @param {number} total_type_b 
+ * @param {Number} a4_width 
+ * @param {Number} a4_height 
+ * @param {Number} a_width 
+ * @param {Number} a_height 
+ * @param {Number} b_width 
+ * @param {Number} b_height 
+ * @param {Number} total_type_a 
+ * @param {Number} total_type_b 
  */
 function calculatePostItNotes(a4_width, a4_height, a_width, a_height, b_width, b_height) {
     // Get number outputs
