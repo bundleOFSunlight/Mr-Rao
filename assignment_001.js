@@ -1,3 +1,5 @@
+// Updated: 29 Dec: Document parameters
+
 // Declare dimensions
 const a4_width = 210;
 const a4_height = 297;
@@ -9,6 +11,12 @@ const b_width = 38;
 const b_height = 51;
 
 // Reusable function
+/**
+ * @param {number} a4_width 
+ * @param {number} a4_height 
+ * @param {number} p_width 
+ * @param {number} p_height 
+ */
 function maxNoOutput(a4_width, a4_height, p_width, p_height) {
     // Calculate the number of post-it notes
     // Each side should cut into No. of pieces
@@ -22,8 +30,17 @@ function maxNoOutput(a4_width, a4_height, p_width, p_height) {
     return Math.max(count__type_1a * count__type_1b, count__type_2a * count__type_2b);
 }
 
+/**
+ * @param {number} a4_width 
+ * @param {number} a4_height 
+ * @param {number} a_width 
+ * @param {number} a_height 
+ * @param {number} b_width 
+ * @param {number} b_height 
+ * @param {number} total_type_a 
+ * @param {number} total_type_b 
+ */
 function calculatePostItNotes(a4_width, a4_height, a_width, a_height, b_width, b_height) {
-
     // Get number outputs
     const total_type_a = maxNoOutput(a4_width, a4_height, a_width, a_height);
     const total_type_b = maxNoOutput(a4_width, a4_height, b_width, b_height);
