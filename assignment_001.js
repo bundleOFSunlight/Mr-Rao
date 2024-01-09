@@ -18,16 +18,17 @@ const b_height = 51;
  * @param {Number} p_height 
  */
 function maxNoOutput(a4_width, a4_height, p_width, p_height) {
+
     // Calculate the number of post-it notes
     // Each side should cut into No. of pieces
-    const count__type_1a = Math.floor(a4_width / p_width);
-    const count__type_1b = Math.floor(a4_height / p_height);
+    const count_type_1a = Math.floor(a4_width / p_width);
+    const count_type_1b = Math.floor(a4_height / p_height);
     // Since paper have 2 sides and the formation should be 2 pairs of possible output  
-    const count__type_2a = Math.floor(a4_width / p_height);
-    const count__type_2b = Math.floor(a4_height / p_width);
+    const count_type_2a = Math.floor(a4_width / p_height);
+    const count_type_2b = Math.floor(a4_height / p_width);
     // Return the max possible result 
     // Although max is not stated in question but we always expect the best output
-    return Math.max(count__type_1a * count__type_1b, count__type_2a * count__type_2b);
+    return Math.max(count_type_1a * count_type_1b, count_type_2a * count_type_2b);
 }
 
 /**
